@@ -4,14 +4,9 @@ def oxford_comma(array)
   elsif array.length == 2
     return array.join(" and ")
   else
-    # the %%% ensures that strings with spaces in them are not separated 
+    # the %%%% ensures that strings with spaces in them are not separated 
     # and no hypothetical percentages are messed with either 
-    return array.join(",%%%").split("%%%").insert(-2, "and").join(" ")
-    
-    array.map! {|val|
-      
-    
-    }
+    return array.join(",%%%%").split("%%%%").insert(-2, "and").join(" ")
   end    
 
 end
